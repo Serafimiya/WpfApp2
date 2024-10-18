@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Peanuts.ico" />
+    <None Remove="снупи.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WpfLibrary1\WpfLibrary1.csproj" />
+    <ProjectReference Include="..\WpfLibrary2\WpfLibrary2.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Peanuts.ico" />
+    <Resource Include="снупи.jpg" />
+  </ItemGroup>
+
+</Project>
